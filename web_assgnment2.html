@@ -1,0 +1,134 @@
+<html>
+<head>
+<title> Calculator </title>
+<style type="text/css">
+ #text
+ {
+  margin-left:-150px;
+  margin-top:200px;
+  margin-bottom:-15px;
+  border-bottom:1px;
+  padding-bottom:1px;
+ }
+ #num_1 ,#num_2
+ {
+  margin-bottom:-15px;
+  size: 1000;
+ }
+ .but
+ {
+  margin-left:-15px;
+  margin-bottom:-20px;
+  border-bottom:1px;
+  padding-top:2px;
+  padding-bottom:2px;
+  
+ }
+ #result
+ {
+  margin-top: 10px;
+ }
+ .div1,.div2,.div3,.div4,.div5
+ {
+  float:left;
+ }
+ .div1
+ {
+  margin-left: 565px;
+  margin-right: 10px; 
+ }
+ .div2
+ {
+  margin-right: 10px; 
+ }
+  .div3
+ {
+  margin-right: 10px; 
+ }
+  .div4
+ {
+  margin-right: 10px; 
+ }
+  .div5
+ {
+  margin-right: 10px; 
+ }
+</style>
+
+<script type="text/javascript"> 
+function add()
+{
+ var num_1 = Number(document.getElementById("num1").value);
+ var num_2 = Number(document.getElementById("num2").value);
+ var result = num_1+num_2;
+ document.getElementById("res").value=result;
+}
+function sub()
+{ 
+ var num_1 = Number(document.getElementById("num1").value);
+ var num_2 = Number(document.getElementById("num2").value);
+ var result = num_1-num_2;
+ document.getElementById("res").value=result;
+}
+function mul()
+{ 
+ var num_1 = Number(document.getElementById("num1").value);
+ var num_2 = Number(document.getElementById("num2").value);
+ var result = num_1*num_2;
+ document.getElementById("res").value=result;
+}
+function div()
+{ 
+ var num_1 = Number(document.getElementById("num1").value);
+ var num_2 = Number(document.getElementById("num2").value);
+ var result = num_1/num_2;
+ document.getElementById("res").value=result;
+}
+function mod()
+{ 
+ var num_1 = Number(document.getElementById("num1").value);
+ var num_2 = Number(document.getElementById("num2").value);
+ var result = num_1%num_2;
+ document.getElementById("res").value=result;
+}
+</script> 
+</head>
+<BODY>
+ <div align="center" >
+  <div id="text">
+   view plainprint?  
+  </div>
+  <br>
+  <div id="num_1">
+   Number 1 : <input type="number" id="num1"> 
+  </div>
+  <br>
+  <div id="num_2">
+   Number 2 : <input type="number" id="num2" >  
+  </div>
+  <br>
+  <div class="but">
+   <div class="div1">
+       <input type="button"  value=" ADD " onclick="add()"/>
+   </div>
+   <div class="div2">
+       <input type="button" value=" SUB " onclick="sub()"/>
+   </div>
+   <div class="div3">
+       <input type="button" value=" MUL " onclick="mul()"/>
+   </div>
+   <div class="div4">
+       <input type="button" value=" DIV " onclick="div()"/>
+   </div>
+   <div class="div5">
+       <input type="button" value=" MOD " onclick="mod()"/>
+   </div>
+  </div>
+  <br>
+  <br>
+  <div  id="result">
+   Get Result : <input type="number" id="res" readonly>
+  </div>
+ </div>
+</BODY>
+</HTML>

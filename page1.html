@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #h{text-align: center;}
+        #btn{text-align: center;}
+    
+    </style>
+    <body>
+        <div >
+            <h1 id="h"> Assignment1 </h1>
+        </div>
+        <form>
+            <div>
+                <table  align="center" border="5">
+                    <thead>
+                        <tr>
+                            <td height = "30" width ="100" align="center" ><b>Name</b></td>
+                            <td height = "30" width ="500" align="center" ><b>Value</b></td>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td height = "30">Name</td>
+                            <td height = "30"><input type="text" placeholder="Enter your name here.."></td>
+                        </tr>
+                        <tr>
+                            
+                            <td height = "60">Gender</td>
+                            <td height = "50">
+                                <div>
+                                    <input id="m"type="radio" name="gender" value="Male">
+                                    <label for="m">Male</label>
+                                </div>
+                                
+                                <div>
+                                    <input id="f" type="radio" name="gender" value="Female" checked="checked">
+                                    <label for="f">Female</label>
+                                </div>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td height = "70">Language</td>
+                            <td height = "70">
+                                <div>
+
+                                    <select name="laguage" multiple="multiple">
+                                        <option value="English" selected="selected">English</option>
+                                        <option value="Arabic">Arabic</option>
+                                        <option value="China" selected="selected">China</option>
+                                        
+                                    </select>
+                                </div>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >Comment</td>
+                            <td >
+                                <textarea name="comment" id="c" cols="40" rows="7" placeholder="Enter your comment here.."></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+            <div id="btn">
+                
+                <input class="btn"  type="submit" value="Send" >
+                <input type="reset" value="reset">
+            </div>
+        <form>
+    </body>
+</html>
